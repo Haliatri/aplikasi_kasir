@@ -116,6 +116,21 @@ public class Login extends javax.swing.JFrame {
             if (u.Id_Level ==0) {
                 JOptionPane.showMessageDialog(null, "AKUN TIDAK DITEMUKAN");
             } else {
+                switch (u.Id_Level){
+                    case 1:
+                        Menu_Registrasi r = new Menu_Registrasi();
+                        r.setVisible(true);
+                        this.setVisible(false);
+                        break;  
+                    case 2:
+                        Menu_Transaksi t = new Menu_Transaksi();
+                        t.setVisible(true);
+                        this.setVisible(false);
+                        t.btn_cetak_laporan.setEnabled(true);
+                        break;
+                    case 3:
+                        
+                }
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());

@@ -43,7 +43,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btn_cetak_laporan = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_transaksi = new javax.swing.JTable();
 
@@ -93,9 +93,9 @@ public class Menu_Transaksi extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         jButton4.setText("DELETE");
 
-        jButton5.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
-        jButton5.setText("CETAK LAPORAN");
-        jButton5.setEnabled(false);
+        btn_cetak_laporan.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        btn_cetak_laporan.setText("CETAK LAPORAN");
+        btn_cetak_laporan.setEnabled(false);
 
         table_transaksi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -156,7 +156,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton4)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton5))
+                                .addComponent(btn_cetak_laporan))
                             .addComponent(jScrollPane1))
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -200,7 +200,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
                     .addComponent(jButton2)
                     .addComponent(jButton3)
                     .addComponent(jButton4)
-                    .addComponent(jButton5))
+                    .addComponent(btn_cetak_laporan))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -245,12 +245,12 @@ public class Menu_Transaksi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btn_cetak_laporan;
     private javax.swing.JComboBox combo_id_makanan;
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton2;
     public javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
-    public javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
