@@ -107,8 +107,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             user u = new user();
-            this.stat = k.getCon().prepareStatement("select * from user where"
-            + "Username='"+u.Username+"' and Password='"+u.Password+"';");
+            this.stat = k.getCon().prepareStatement("select * from user where Username = '"+u.Username+"' and Password = '"+u.Password+"' ");
             this.rs = this.stat.executeQuery();
             while (rs.next()) {                
                 u.Id_Level = rs.getInt("Id_Level");
@@ -118,8 +117,8 @@ public class Login extends javax.swing.JFrame {
             } else {
                 switch (u.Id_Level){
                     case 1:
-                        Menu_Registrasi r = new Menu_Registrasi();
-                        r.setVisible(true);
+                        MenuUtama m = new MenuUtama();
+                        m.setVisible(true);
                         this.setVisible(false);
                         break;  
                     case 2:
@@ -128,12 +127,10 @@ public class Login extends javax.swing.JFrame {
                         this.setVisible(false);
                         t.btn_cetak_laporan.setEnabled(true);
                         break;
-                    case 3:
-                        
                 }
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
+            JOptionPane.showMessageDialog(null, "gagal login");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
