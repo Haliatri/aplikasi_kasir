@@ -124,12 +124,12 @@ public class Menu_Transaksi extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Consolas", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TRANSAKSI");
+        jLabel1.setText("TRANSAKSI PENJUALAN");
 
         jLabel2.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
         jLabel2.setText("ID Transaksi");
 
-        txt_id_transaksi.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        txt_id_transaksi.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
 
         btn_logout.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         btn_logout.setText("LOG OUT");
@@ -142,9 +142,9 @@ public class Menu_Transaksi extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
         jLabel3.setText("Nama Pelanggan");
 
-        txtnama_pelanggan.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        txtnama_pelanggan.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
 
-        combo_produk_id.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        combo_produk_id.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
         jLabel5.setText("Tanggal");
@@ -152,12 +152,12 @@ public class Menu_Transaksi extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
         jLabel6.setText("Jumlah Beli");
 
-        txt_jumlah_beli.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        txt_jumlah_beli.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Consolas", 1, 24)); // NOI18N
         jLabel7.setText("Total Bayar");
 
-        txt_total_bayar.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        txt_total_bayar.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
 
         btn_input.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         btn_input.setText("INPUT");
@@ -245,18 +245,16 @@ public class Menu_Transaksi extends javax.swing.JFrame {
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(59, 59, 59)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(txt_total_bayar, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txt_tanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtnama_pelanggan, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(combo_produk_id, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_jumlah_beli, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_id_transaksi, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(combo_produk_id, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txt_id_transaksi, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtnama_pelanggan, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_tanggal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                            .addComponent(txt_jumlah_beli, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_total_bayar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btn_lihat_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -269,8 +267,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
                                 .addComponent(btn_cetak_laporan))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn_lihat_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(41, 41, 41))))
         );
         layout.setVerticalGroup(
@@ -331,7 +328,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_logoutActionPerformed
 
     private void btn_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_inputActionPerformed
-        // TODO add your handling code here:
+        // Koding Input
         try {
             transaksi t = new transaksi();
             txt_total_bayar.setText(""+t.Total_Bayar);
@@ -358,7 +355,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
                 refreshTable();
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
+            JOptionPane.showMessageDialog(null, "Gagal input");
         }
     }//GEN-LAST:event_btn_inputActionPerformed
 
@@ -367,7 +364,7 @@ public class Menu_Transaksi extends javax.swing.JFrame {
         try {
             transaksi t = new transaksi();
             t.Id_Transaksi = Integer.parseInt(txt_id_transaksi.getText());
-            this.stat = k.getCon().prepareStatement("update transaksi set Nama_Pelanggan=?, Id_Makanan=?, Tanggal=?, Nama_Makanan=?, Harga=? Jumlah_Beli=?, Total_Bayar=? where Id_Transaksi=?");
+            this.stat = k.getCon().prepareStatement("update transaksi set Nama_Pelanggan=?, ProdukID=?, Tanggal=?, Nama_Makanan=?, Harga=? Jumlah_Beli=?, Total_Bayar=? where Id_Transaksi=?");
             this.stat.setString(1, t.Nama_Pelanggan);
             this.stat.setInt(2, t.ProdukID);
             this.stat.setString(3, t.Tanggal);
